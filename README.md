@@ -1,6 +1,6 @@
 # Projet Flask déployé sur une instance EC2 avec Load Balancer, Auto Scaling et autres ressources AWS
 
-![Texte alternatif de l'image](static/images/github/awslogo.png)
+![AWS logo](static/images/github/awslogo.png)
 
 Ce projet consiste à déployer une application Flask sur une instance EC2 d'Amazon Web Services (AWS) en utilisant un Load Balancer, l'Auto Scaling et d'autres ressources pour assurer la haute disponibilité et la mise à l'échelle automatique de l'application.
 
@@ -9,6 +9,7 @@ Ce projet consiste à déployer une application Flask sur une instance EC2 d'Ama
 1. Créer une instance EC2 :
    - Lancer une instance EC2 en utilisant une image Amazon Linux.
    - Configurer les groupes de sécurité pour permettre l'accès au port 80 (HTTP), au port 5000 (utilisé par votre application Flask) et au port 22 (utilisé pour SSH), depuis n'importe quelle adresse IP.
+   ![Security Groups](static/images/github/security-group.png)
    - Utiliser le script `user-data` suivant pour la configuration initiale de l'instance :
 
 ```bash
