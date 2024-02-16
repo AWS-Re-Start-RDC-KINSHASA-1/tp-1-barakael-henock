@@ -36,6 +36,8 @@ Créer un Load Balancer de type Application Load Balancer (ALB) dans la même r�
 Configurer le Load Balancer pour écouter le trafic HTTP sur le port 80 et rediriger le trafic vers les instances EC2 créées précédemment.
 Configurer les règles de santé du Load Balancer pour vérifier l'état de santé des instances EC2.
 
+![Security Groups](static/images/github/load-balancer-conf.png)
+
 3. Configurer le Target Group :
 
 Créer un Target Group associé au Load Balancer pour les instances EC2.
