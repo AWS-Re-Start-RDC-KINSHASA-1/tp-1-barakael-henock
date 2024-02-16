@@ -9,8 +9,12 @@ Ce projet consiste à déployer une application Flask sur une instance EC2 d'Ama
 1. Créer une instance EC2 :
    - Lancer une instance EC2 en utilisant une image Amazon Linux.
    - Configurer les groupes de sécurité pour permettre l'accès au port 80 (HTTP), au port 5000 (utilisé par votre application Flask) et au port 22 (utilisé pour SSH), depuis n'importe quelle adresse IP.
+
    ![Security Groups](static/images/github/security-group.png)
+
    - Utiliser le script `user-data` suivant pour la configuration initiale de l'instance :
+
+    ![Security Groups](static/images/github/user-data.png)
 
 ```bash
     #!/bin/bash
