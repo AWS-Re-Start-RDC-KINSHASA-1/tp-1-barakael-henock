@@ -57,4 +57,7 @@ Inclure le script user-data dans le Launch Template pour automatiser la configur
 6. Tester l'application :
 
 Accéder à l'URL du Load Balancer (http://flask-load-balancer-1650147702.us-east-1.elb.amazonaws.com/) pour tester l'application Flask déployée.
+
+![Security Groups](static/images/github/home.png)
+
 Vérifier que le trafic est réparti entre les instances EC2 et que l'Auto Scaling fonctionne correctement en ajoutant ou supprimant des instances en fonction de la charge.
